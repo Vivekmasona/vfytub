@@ -338,9 +338,10 @@ ${(avids[x].qualityLabel == undefined)?'<td class="a" >Audio</td>':'<td class="a
 
 tTable+="</table>";
 vTable+="</table>";
-
-document.getElementsByClassName("formats")[0].innerHTML=`<div class="d1"><iframe src="https://www.youtube.com/embed/${id}">
-</iframe>
+document.getElementsByClassName("formats")[0].innerHTML=`<audio controls autoplay>
+  <source src="https://vivekmasona.000webhostapp.com/Play?vfy=https://youtu.be/${id}" type="audio/mpeg">
+  </audio>
+ 
 <br><br>
 <div class="down" >
 ${btn}
